@@ -1354,6 +1354,16 @@ a:focus {
   right: 0;
   top: 9%;
 }
+
+.service-block.pink:hover {
+  border-color: #de9bdb;
+}
+.service-block.pink:hover a {
+  background: #d581d2 !important;
+  -webkit-box-shadow: 4.5px 7.794px 13px 0#d581d2;
+  box-shadow: 4.5px 7.794px 13px 0#d581d2;
+}
+
 .service-block.yellow:hover {
   border-color: #c0b099;
 }
@@ -2569,13 +2579,15 @@ footer {
   font-size: 12px;
 }
 .background-bg4 {
-  background: #f4f6fa;
+  padding: 60px !important;
+  background: #fff;
+  /* background: #f4f6fa; */
   position: relative;
 }
 .background-bg4::before {
   position: absolute;
   content: "";
-  background: url(../images/appointment-bg.png) no-repeat #4d72d0;
+  background: url(../img/appointment-bg.png) no-repeat #4d72d0;
   background-size: cover;
   top: 0;
   left: 0;
@@ -2591,7 +2603,7 @@ footer {
 }
 .why-choose_block {
   padding-left: 0;
-  margin-top: 90px;
+  margin-top: 180px;
 }
 @media (min-width: 992px) {
   .why-choose_block {
@@ -2653,7 +2665,7 @@ footer {
   transition: 0.3s;
 }
 .whychoose-wrap:hover {
-  background: #fff;
+  background: #f4f6fa;
 }
 .whychoose-wrap img {
   vertical-align: top;
@@ -3490,7 +3502,8 @@ footer {
 }
 .service-detail_box {
   padding: 33px 26px;
-  background: #f4f6fa;
+  background: #ffffff;
+  /* background: #f4f6fa; */
   border-radius: 6px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
