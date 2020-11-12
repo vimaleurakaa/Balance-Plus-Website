@@ -330,3 +330,32 @@ form &&
         }, 5000);
       });
   });
+
+//Services tab Switch
+function tabswitcher() {
+  var curtab = window.location.href;
+  curtab = curtab.split("#");
+  curtab = "#" + curtab[1];
+
+  $("a.tab").each(function (i) {
+    if (curtab == $(this).attr("href")) {
+      $(this).addClass("show-cat");
+    }
+  });
+
+  $("div.service").each(function (i) {
+    if (curtab == $(this).attr("data-service")) {
+      service = $(this).addClass("is-active");
+    }
+  });
+}
+$("a.tab").click(function () {
+  // Select tab
+  $("a.tab").removeClass("show-cat");
+  let tab_id = $(this).attr("data-tab");
+  $(".service").removeClass("is-active");
+  $(this).addClass("show-cat");
+  $("#" + tab_id).addClass("is-active");
+});
+
+tabswitcher();
