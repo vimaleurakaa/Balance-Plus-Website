@@ -1,6 +1,6 @@
 $(document).ready(function () {
   document.getElementById("whatsapp").innerHTML += `<a
-    href="https://wa.me/919019796808?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure. Thnaks"
+    href="https://wa.me/917411692516?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure. Thnaks"
     class="whatsapp-float"
     target="_blank"
   >
