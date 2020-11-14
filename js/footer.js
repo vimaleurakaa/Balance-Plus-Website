@@ -15,7 +15,7 @@ $(document).ready(function () {
 <div class="row">
 <div class="col-sm-12 col-md-12 col-lg-4">
 <div class="foot-contact-block">
-<img src="images/Balance-Plus-Logo-white.png" class="img-fluid" alt="#">
+<img class='footer-logo' src="img/logo-white.svg" class="img-fluid" alt="#" ">
 <p>
 Lorem ipsum dolor sit amet, consect <br> etur adipisicing elit, sed do eius mod <br>
 tempor incididunt ut labore et dolore<br> magna aliqua. Ut enim ad minim

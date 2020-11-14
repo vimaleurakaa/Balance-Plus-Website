@@ -1,3 +1,30 @@
+.footer-logo {
+  width: 180px;
+}
+
+.form-title {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-title {
+    display: block;
+  }
+  .booking-form {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .logo-size {
+    margin-left: 12px;
+  }
+  .mob-display {
+    display: none !important;
+  }
+  .we-are {
+    font-size: 14px !important;
+  }
+}
+
 a {
   color: #ff8b3e;
 }
@@ -8,7 +35,8 @@ a {
 }
 
 .btn-secondary {
-  background-color: #cc5200 !important;
+  background-color: #fff !important;
+  color: black;
 }
 
 .btn-secondary:hover {
@@ -1476,8 +1504,15 @@ a:focus {
 .why-choose-block::before {
   position: absolute;
   content: "";
-  /* background: url() no-repeat #5bc198; */
-  background: #ff8b3e;
+  background: linear-gradient(
+      0deg,
+      rgb(254, 109, 25, 0.8) 0%,
+      rgba(254, 109, 25, 0.8) 100%
+    ),
+    url(../img/why-choose-bg.jpg) no-repeat;
+
+  /* background: #ff8b3e; */
+  background-position-x: -600px;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1499,8 +1534,8 @@ a:focus {
 .why-choose-block::after {
   position: absolute;
   content: "";
-  /* background: url(../images/why-choose-bg-right.png) no-repeat #4d72d0; */
-  background: #e7392c;
+  background: url(../images/why-choose-bg-right.png) no-repeat #4d72d0;
+  /* background: #e7392c; */
   background-size: cover;
   right: 0;
   bottom: 0;
@@ -1518,7 +1553,7 @@ a:focus {
   margin: 0 0 25px;
 }
 .why-choose-block hr {
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 .why-choose_list-br {
   margin: 6px 0 !important;
@@ -1528,7 +1563,7 @@ a:focus {
 }
 .why-choose_list i {
   vertical-align: top;
-  background: #d75d0b;
+  background: #c45002;
   padding: 5px;
   border-radius: 50%;
   font-size: 12px;
@@ -1572,7 +1607,7 @@ a:focus {
 .choose-icon {
   position: relative;
   display: inline-block;
-  background: #bb271c;
+  background: #1d47b3;
   border-radius: 6px;
   vertical-align: top;
   width: 60px;
@@ -2183,7 +2218,7 @@ footer {
 }
 @media (min-width: 768px) {
   .foot-link-box {
-    margin: 90px 0;
+    margin: 60px 0;
   }
 }
 .foot-link-box h4 {
@@ -3073,7 +3108,7 @@ footer {
 }
 .blog-grid-date {
   position: absolute;
-  background: #5bc198;
+  background: #ff8533;
   text-align: center;
   padding: 6px 15px;
   color: #fff;
@@ -3097,8 +3132,8 @@ footer {
 .blog-grid-top_icon label {
   margin: 0;
   font-size: 12px;
-  border: 1px solid #4d72d0;
-  color: #4d72d0;
+  border: 1px solid #ff8533;
+  color: #ff8533;
   border-radius: 22px;
   padding: 3px 14px;
 }
