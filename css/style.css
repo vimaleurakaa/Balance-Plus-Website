@@ -1,3 +1,11 @@
+#covers {
+  background: url("../img/ajax-loader.gif") no-repeat scroll center center #fff;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+}
+
 .footer-logo {
   width: 180px;
 }
@@ -6,7 +14,262 @@
   display: none;
 }
 
+.mobile-visible {
+  display: none;
+}
+
+.virtual-visible {
+  display: block;
+}
+.mob-only-visible {
+  display: none;
+}
+
+.disp-mob {
+  display: none;
+}
+
+.form-custom-mobile {
+  border-bottom: 2px solid #fff !important;
+}
+
+.testi-form {
+  margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 600px) {
+  .why-choose_block-mobile {
+    margin-top: 64px !important;
+    margin-right: -50px;
+    margin-left: -14px;
+  }
+
+  .get-in-touch-style2 {
+    background-position-x: -200px !important;
+  }
+
+  .contact-add-mob {
+    display: none;
+  }
+
+  div.testi-slider-style2 {
+    margin-left: -20px;
+    /* width: 500px; */
+    height: 460px;
+  }
+
+  .reset-testi-pad {
+    padding: 0 !important;
+  }
+
+  .testi-img {
+    width: 100px;
+  }
+
+  .testi-text {
+    margin-left: -30px;
+    margin-right: -60px;
+    text-align: left;
+    font-size: 16px !important;
+  }
+
+  .vision-mob {
+    margin-top: -20px;
+  }
+
+  .our-team-mob {
+    margin-top: -30px;
+  }
+
+  .our-team-section-mob {
+    margin-top: -20px;
+  }
+
+  .about-who {
+    margin-top: -160px;
+  }
+
+  .about-who-mission {
+    margin-top: -90px;
+  }
+
+  /* #wrapper-mobile {
+    margin-top: -20px !important;
+    margin-bottom: -20px !important;
+  } */
+
+  .whychoose-wrap {
+    padding: 10px 12px !important;
+    margin: 0 0 10px !important;
+  }
+
+  #background-bg4-mobile {
+    padding: 50px 30px 30px 30px !important;
+    margin-top: -40px;
+  }
+
+  #background-bg4-mobile::before {
+    height: 680px;
+  }
+
+  .physio-serv-mob {
+    display: none;
+  }
+  .service-block-mobile {
+    margin-bottom: 18px !important;
+  }
+
+  .sub-header-margin {
+    margin-left: 8px;
+    padding-top: 30px;
+    margin-bottom: -30px;
+  }
+
+  .hero-subheader-mob {
+    opacity: 0 !important;
+  }
+
+  .hero-title-mob {
+    font-size: 16px !important;
+  }
+
+  .hero-img-text {
+    font-size: 18px !important;
+  }
+
+  .nav-appoint-size {
+    width: 50%;
+    margin-left: 16px;
+    background-color: #ff8b3e;
+  }
+
+  #appoint-mob-id {
+    color: #fff !important;
+  }
+
+  .heading-style1-mob {
+    margin-left: 20px !important;
+  }
+
+  .virtual-btn {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-color: #fff !important;
+  }
+
+  .disp-mob-desk {
+    display: none;
+  }
+
+  .disp-mob {
+    display: block;
+  }
+
+  .our-team-title {
+    text-align: left !important;
+    margin-left: 20px !important;
+    margin-top: -20px !important;
+  }
+
+  .service-mob {
+    margin-left: 10px !important;
+  }
+
+  .our-exp {
+    font-size: 24px;
+  }
+
+  .short-story {
+    font-size: 24px !important;
+  }
+
+  .vitual-margin-mob {
+    margin-left: -20px;
+  }
+
+  .consultant-text-mob {
+    padding-bottom: 10px;
+  }
+
+  .consultant-content-mob {
+    padding-top: 60px !important;
+    padding-bottom: 160px !important;
+  }
+
+  .virtual-img-mob {
+    /* width: 600px;
+    margin-right: 680px; */
+    width: 600px;
+    margin-top: -130px;
+    padding-right: 120px;
+    margin-left: -160px;
+  }
+
+  .virtual-bg {
+    /* background: url(../img/virtual-consultation.png) no-repeat #ff983c; */
+    background: #ff983c;
+    background-position-x: -300px;
+    background-position-y: 200px;
+    background-size: cover;
+    padding-left: 60px;
+    /* height: 430px; */
+  }
+
+  .mob-only-visible {
+    display: block;
+    overflow-x: hidden;
+  }
+
+  .virtual-visible {
+    display: none;
+  }
+
+  .our-team-mob {
+    margin-bottom: -80px;
+  }
+
+  .sub-mob-margin {
+    margin-top: -20px;
+  }
+
+  .texhnology-mob {
+    margin-left: -40px;
+    margin-right: -60px;
+  }
+
+  .subscribe-mob {
+    width: 300px;
+    margin-left: -10px;
+  }
+
+  .why-choose {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  .emergency-mob {
+    padding-top: 100px;
+    padding-bottom: -10px;
+    padding-left: 20px;
+  }
+
+  .service-help-mobile {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .get-started {
+    font-size: large;
+  }
+
+  .about-numbers {
+    width: 50% !important;
+  }
+
+  .mobile-visible {
+    display: block;
+  }
+
   .form-title {
     display: block;
   }
@@ -36,7 +299,7 @@ a {
 
 .btn-secondary {
   background-color: #fff !important;
-  color: black;
+  color: black !important;
 }
 
 .btn-secondary:hover {
@@ -1821,7 +2084,7 @@ a:focus {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
 }
 .our-team {
-  padding: 30px 0 130px;
+  padding: 20px 0 130px;
 }
 .sub-title_center {
   text-align: center;
@@ -1941,7 +2204,7 @@ a:focus {
 .bg-img3 {
   background: url(../images/bg-img-3.jpg) no-repeat;
   background-size: cover;
-  padding-left: 60px;
+  padding-left: 160px;
   height: 430px;
 }
 .consultant-content {
@@ -2690,9 +2953,11 @@ footer {
   height: 38px;
   padding: 7px 0;
 }
+
 .doctors-plus-icon i {
   font-size: 12px;
 }
+
 .background-bg4 {
   padding: 60px !important;
   background: #fff;
@@ -2702,7 +2967,12 @@ footer {
 .background-bg4::before {
   position: absolute;
   content: "";
-  background: url(../img/appointment-bg.png) no-repeat #4d72d0;
+  background: linear-gradient(
+      0deg,
+      rgb(231 85 0 / 80%) 0%,
+      rgb(231 85 0 / 80%) 100%
+    ),
+    url(../img/why-choose-bg.jpg) no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -2713,7 +2983,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .background-bg4::before {
-    background: #4d72d0;
+    /* background: #4d72d0; */
   }
 }
 
@@ -2760,6 +3030,7 @@ footer {
   color: #fff;
   font-weight: 300;
 }
+
 .appointment-form_wrap input:focus {
   background: 0 0;
   outline: none;
@@ -2772,7 +3043,7 @@ footer {
 }
 .appointment-form_wrap textarea {
   border-radius: 0;
-  border: 2px solid #7898dd;
+  /* border: 2px solid #7898dd; */
 }
 .appointment-form_wrap textarea:focus {
   border-color: #5bc198;
@@ -3341,7 +3612,13 @@ footer {
 }
 .get-in-touch-style2 {
   margin: 0;
-  background: #4d72d0;
+  background: linear-gradient(
+      0deg,
+      rgb(231 85 0 / 80%) 0%,
+      rgb(231 85 0 / 80%) 100%
+    ),
+    url(../img/why-choose-bg.jpg) no-repeat;
+  background-size: cover;
 }
 .get-in-touch-style2 i {
   color: #3c3f42 !important;
