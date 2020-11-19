@@ -6,6 +6,10 @@
   z-index: 9999;
 }
 
+.desktop-space {
+  margin-bottom: -140px;
+}
+
 .footer-logo {
   width: 180px;
 }
@@ -42,6 +46,18 @@
     margin-top: 64px !important;
     margin-right: -50px;
     margin-left: -14px;
+  }
+
+  .blog-img-1 {
+    display: none;
+  }
+
+  .about-section.space {
+    padding-bottom: 40px !important;
+  }
+
+  .blog-tags-mobile {
+    display: none;
   }
 
   .get-in-touch-style2 {
@@ -293,7 +309,7 @@ a {
 }
 
 .show-cat {
-  background-color: #4d72d0;
+  background-color: #ff8b3e;
   color: #fff;
 }
 
@@ -1367,10 +1383,12 @@ a:focus {
   display: block;
   text-align: center;
 }
+
 @media (min-width: 768px) {
   .service-thumbnail {
     text-align: left;
     margin: 0;
+    padding-right: 20px;
     border-right: 1px solid #cccccc5e;
   }
 }
@@ -1769,8 +1787,8 @@ a:focus {
   content: "";
   background: linear-gradient(
       0deg,
-      rgb(254, 109, 25, 0.8) 0%,
-      rgba(254, 109, 25, 0.8) 100%
+      rgb(222, 85, 6, 0.8) 0%,
+      rgba(255, 126, 52, 0.8) 100%
     ),
     url(../img/why-choose-bg.jpg) no-repeat;
 
@@ -3110,7 +3128,7 @@ footer {
   font-size: 13px;
 }
 .blog-text-wrap {
-  padding: 30px;
+  padding: 30px 30px 0px 30px;
   border: 2px solid #f4f6fa;
 }
 .blog-comment-top {
@@ -3317,7 +3335,7 @@ footer {
 }
 .blog-sidebar_social li a {
   display: block;
-  border: 1px solid #4d72d0;
+  border: 1px solid #ff8b3e;
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -3336,7 +3354,7 @@ footer {
   }
 }
 .blog-sidebar_social li a:hover {
-  background: #4d72d0;
+  background: #ff8b3e;
   color: #fff;
 }
 .blog-join_us {
@@ -3944,7 +3962,7 @@ footer {
   filter: invert(1);
 }
 .error {
-  background: url(../images/error.jpg) no-repeat;
+  background: url(../img/bg-addon.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   text-align: center;
@@ -4196,7 +4214,7 @@ footer {
 }
 .sidebar-category ul li a:hover {
   text-decoration: none;
-  background: #4d72d0;
+  background: #ff8b3e;
 }
 .sidebar-category ul li a:hover span {
   color: #fff;

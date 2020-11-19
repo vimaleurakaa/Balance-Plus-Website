@@ -13,7 +13,12 @@ $(function () {
     }
   });
   $("#scroll").on("click", function (e) {
-    $("html, body").animate({ scrollTop: 0 }, 600);
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      600
+    );
     return false;
   });
   var $magnificPopup = $(".popup-youtube");
@@ -43,6 +48,7 @@ $(function () {
       close_video();
     }
   });
+
   function close_video() {
     $(".video-overlay.open").removeClass("open").find("iframe").remove();
   }
@@ -60,7 +66,10 @@ $(function () {
       responsive: [
         {
           breakpoint: 768,
-          settings: { vertical: false, verticalSwiping: false },
+          settings: {
+            vertical: false,
+            verticalSwiping: false,
+          },
         },
       ],
     });
@@ -87,15 +96,27 @@ $(function () {
         },
         {
           breakpoint: 992,
-          settings: { arrows: false, slidesToShow: 1, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
         {
           breakpoint: 768,
-          settings: { arrows: false, slidesToShow: 1, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
         {
           breakpoint: 576,
-          settings: { arrows: false, slidesToShow: 1, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
       ],
     });
@@ -122,11 +143,19 @@ $(function () {
         },
         {
           breakpoint: 768,
-          settings: { arrows: false, slidesToShow: 2, slidesToScroll: 2 },
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
         },
         {
           breakpoint: 576,
-          settings: { arrows: false, slidesToShow: 1, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
       ],
     });
@@ -153,11 +182,19 @@ $(function () {
         },
         {
           breakpoint: 992,
-          settings: { arrows: false, slidesToShow: 2, slidesToScroll: 2 },
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
         },
         {
           breakpoint: 576,
-          settings: { arrows: false, slidesToShow: 1, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
       ],
     });
@@ -184,11 +221,19 @@ $(function () {
         },
         {
           breakpoint: 768,
-          settings: { arrows: false, slidesToShow: 2, slidesToScroll: 2 },
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
         },
         {
           breakpoint: 576,
-          settings: { arrows: false, slidesToShow: 1, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
       ],
     });
@@ -215,15 +260,27 @@ $(function () {
         },
         {
           breakpoint: 992,
-          settings: { arrows: false, slidesToShow: 3, slidesToScroll: 2 },
+          settings: {
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+          },
         },
         {
           breakpoint: 768,
-          settings: { arrows: false, slidesToShow: 2, slidesToScroll: 2 },
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
         },
         {
           breakpoint: 576,
-          settings: { arrows: false, slidesToShow: 1, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
         },
       ],
     });
@@ -237,7 +294,14 @@ $(function () {
       slidesToScroll: 1,
       arrows: true,
       dots: false,
-      responsive: [{ breakpoint: 768, settings: { arrows: false } }],
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+          },
+        },
+      ],
     });
   }
   var $testiSliderstyle2nav = $(".testi-slider-style2-nav");
@@ -261,11 +325,19 @@ $(function () {
         },
         {
           breakpoint: 768,
-          settings: { arrows: false, slidesToShow: 3, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
         },
         {
           breakpoint: 576,
-          settings: { arrows: false, slidesToShow: 2, slidesToScroll: 1 },
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
         },
       ],
     });
@@ -295,46 +367,6 @@ $(function () {
     });
   }
 });
-const form = document.getElementById("form");
-const result = document.getElementById("result");
-form &&
-  form.addEventListener("submit", function (e) {
-    const formData = new FormData(form);
-    e.preventDefault();
-    var object = {};
-    formData.forEach((value, key) => {
-      object[key] = value;
-    });
-    var json = JSON.stringify(object);
-    result.innerHTML = "Please wait...";
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    })
-      .then(async (response) => {
-        if (response.status == 200) {
-          let json = await response.json();
-          result.innerHTML = json.body.message;
-        } else {
-          console.log(response);
-          result.innerHTML = "Something went wrong!";
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-        result.innerHTML = "Something went wrong!";
-      })
-      .then(function () {
-        form.reset();
-        setTimeout(() => {
-          result.style.display = "none";
-        }, 5000);
-      });
-  });
 
 //Services tab Switch
 function tabswitcher() {
@@ -354,12 +386,15 @@ function tabswitcher() {
     }
   });
 }
-$("a.tab").click(function () {
+
+$("a.tab").click(function (evt) {
   // Select tab
+  evt.preventDefault();
   $("a.tab").removeClass("show-cat");
-  let tab_id = $(this).attr("data-tab");
+  let tab_id = $(this).attr("data-tab"); //Right Pane
+  $(this).addClass("show-cat"); // Left Pane
+
   $(".service").removeClass("is-active");
-  $(this).addClass("show-cat");
   $("#" + tab_id).addClass("is-active");
 });
 

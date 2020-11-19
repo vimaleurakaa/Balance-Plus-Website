@@ -46,7 +46,7 @@ $(document).ready(function () {
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="blog-post-1.html" id="navbarDropdown3"
+                                <a class="nav-link dropdown-toggle" href="blog-post.html" id="navbarDropdown3"
                                     role="button" aria-haspopup="true" aria-expanded="false"> Blog
                                     <div class="dropdown-menu dropdown-left" aria-labelledby="navbarDropdown"
                                         style="display: none;">
@@ -64,6 +64,12 @@ $(document).ready(function () {
                                                 style="display: none;">
                                                 <a class="dropdown-item" href="about.html">About</a>
                                             </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" target="_blank" href="https://rzp.io/l/uY1rAktUE" aria-haspopup="true"
+                                aria-expanded="false">
+                                Pay Online
+                            </a>
                             </li>
                             <li class="nav-item ">
                                 <a id="appoint-mob-id" class="nav-link btn btn-outline-primary appointment-btn-top nav-appoint-size"

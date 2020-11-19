@@ -15,6 +15,9 @@
       crossorigin="anonymous"
     />
 
+    
+        
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -41,7 +44,41 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Balance Plus | Home</title>
+   
+    <!-- SEO -->
+    <title>Balance Plus | Physiotherapy Specialist</title>
+    <meta name="description" content="Best Physiotherapist in Bangalore for pain relief &amp; rehab for Ortho, Neuro Physiotherapy, Sports Injury and more.">
+    <link rel="canonical" href="https://balanceplus.in/" />
+    <link rel="icon" href="img/fav-ico.svg" type="image/jpg">
+    <meta name="theme-color" content="#ff6600">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Balance Plus | Physiotherapy Specialist" />
+    <meta property="og:description" content="Best Physiotherapist in Bangalore for pain relief &amp; rehab for Ortho, Neuro Physiotherapy, Sports Injury and more." />
+    <meta property="og:url" content="https://balanceplus.in/" />
+    <meta property="og:site_name" content="Balance Plus | Physiotherapy Specialist" />
+    <meta property="og:image" content="./img/about-us.jpeg" />
+    
+
+    <meta name="keywords" content="balanceplus physiotherapy, chain of physiotherapy clinics, best physiotherapist, physiotherapy rehabilitation centre,neurological rehab,orthopaedic physiotherapy,cardiac and pulmonary physiotherapy,in patient stroke rehab,sports and fitness rehab,womens health,posture and ergonomics,physiotherapy in mumbai,physiotherapy in thane,physiotherapy in bangalore,physiotherapist at home,physiotherapy in bengaluru,physiotherapy in urban,physiotherapy in india,physiotherapy corporate service">
+   
+
+    <script type='application/ld+json'>
+    {
+    "@context":"http:\/\/schema.org",
+    "@type":"WebSite",
+    "@id":"#website",
+    "url":"https:\/\/balanceplus.in\/",
+    "name":"Balance Plus",
+    "potentialAction":{
+        "@type":"SearchAction",
+        "target":"https:\/\//balanceplus.in\/?s={search_term_string}",
+        "query-input":"required name=search_term_string"
+    }
+    }</script>
+    <!-- SEO -->
+
+    
   </head>
 
   <body>
@@ -71,7 +108,7 @@
                       One of the keys to managing back pain or neck pain is to
                       actively engage in rehabilitation and exercise.<br /><br />
                     </p>
-                    <a href="#" class="btn btn-primary mob-display" tabindex="0"
+                    <a href="appointment.html" class="btn btn-primary mob-display" tabindex="0"
                       >Make Appointment</a
                     >
                     <a
@@ -99,7 +136,7 @@
                       One of the keys to managing back pain or neck pain is to
                       actively engage in rehabilitation and exercise.
                     </p>
-                    <a href="#" class="btn btn-primary" tabindex="0"
+                    <a href="appointment.html" class="btn btn-primary" tabindex="0"
                       >Make Appointment</a
                     >
                     <a
@@ -117,10 +154,12 @@
       </div>
     </header>
 
+    
     <section class="about-section">
       <div class="container container-custom">
         <div class="row">
           <div class="col-md-12">
+            <form id="form" method="POST" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSftJoP-lqx1iRGnTsGIBvWJYem7Ohnq6kggw3cBPAq96kLQjA/formResponse" target="form-target" onsubmit="return validate_form();" >
             <ul class="booking-form">
               <p
                 class="form-title"
@@ -131,8 +170,10 @@
               <li>
                 <input
                   type="text"
+                  name="entry.314831830"
                   class="form-control"
                   placeholder="Enter Your Email"
+                  required=""
                 /><i class="fas fa-user"></i>
               </li>
               <li>
@@ -140,38 +181,40 @@
                   type="text"
                   class="form-control"
                   placeholder="Enter Your Number"
+                  name="entry.1178267781"
+                  required=""
                 /><i class="far fa-envelope"></i>
               </li>
               <li>
-                <select class="custom-select form-control">
+                <select id="service_type" class="custom-select form-control">
                   <option selected="">Select a Service</option>
-                  <option value="1">Physiotherapy</option>
-                  <option value="2">Fitness & Training</option>
-                  <option value="3">Dietitian Nutritionist</option>
-                  <option value="4">Corporate Service</option>
+                  <option value="Physiotherapy">Physiotherapy</option>
+                  <option value="Fitness & Training">Fitness & Training</option>
+                  <option value="Dietitian Nutritionist">Dietitian & Nutritionist</option>
+                  <option value="Corporate Service">Corporate Service</option>
                 </select>
               </li>
+              <input name="entry.1929831042" type="text" id="selected-item" style="display: none;" ></input>
               <li class="form-btn">
-                <a href="#" class="btn btn-success">BOOK NOW</a>
+                <button type="submit" class="btn btn-success" onclick="getSelectedService();">BOOK NOW</button>
               </li>
             </ul>
+          </form>
           </div>
         </div>
+
+        <iframe src="#" name="form-target" frameborder="0" style="display: none;"></iframe>
 
         <div class="row space" style="margin-left: auto">
           <div class="col-md-4">
             <div class="service-thumbnail d-flex flex-fill">
-              <img
-                src="images/service-thumbnail01.png"
-                class="img-fluid"
-                alt="#"
-              />
+              <img src="img/consult.svg" class="img-fluid" alt="#" />
 
               <div class="service-thumbnail_text">
-                <h4>Professional therapist</h4>
+                <h4>Online consultation</h4>
                 <p>
-                  We are highest levels of honesty and professionalism at all
-                  times.
+                  Have your own expert Physiotherapist at your fingertips, at a
+                  time and place which is convenient for you.
                 </p>
               </div>
             </div>
@@ -179,28 +222,23 @@
 
           <div class="col-md-4">
             <div class="service-thumbnail d-flex flex-fill">
-              <img
-                src="images/service-thumbnail02.png"
-                class="img-fluid"
-                alt="#"
-              />
+              <img src="img/therapist.svg" class="img-fluid" alt="#" />
               <div class="service-thumbnail_text">
-                <h4>24/7 Advanced Care</h4>
-                <p>Our treatment plans are tailored perfectly for you</p>
+                <h4>Skillful and competent therapists</h4>
+                <p>
+                  Balance plus therapists exhibits a level of unmatched
+                  professionalism.
+                </p>
               </div>
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="service-thumbnail border-0 d-flex flex-fill">
-              <img
-                src="images/service-thumbnail03.png"
-                class="img-fluid"
-                alt="#"
-              />
+              <img src="img/care.svg" class="img-fluid" alt="#" />
               <div class="service-thumbnail_text">
-                <h4>Trained Therapists</h4>
-                <p>We have the right caring,</p>
+                <h4>Personalized treatment plans</h4>
+                <p>You are unique and so are your treatment needs.</p>
               </div>
             </div>
           </div>
@@ -211,21 +249,21 @@
             <div class="about-video_block">
               <div class="row">
                 <div class="col-md-12 col-lg-6">
-                  <a
+                  <!-- <a
                     href="../../watch.html?v=pBFQdxA-apI"
                     class="video-play-img popup-youtube"
-                  >
+                  > -->
                     <img
                       src="img/about-us.jpeg"
                       class="img-fluid w-100"
                       alt="#"
                     />
-                    <div class="video-play-btn">
+                    <!-- <div class="video-play-btn">
                       <div class="video-play-icon">
                         <i class="fas fa-play"></i>
                       </div>
                       <span>PLAY VIDEO</span>
-                    </div>
+                    </div> -->
                   </a>
                 </div>
                 <div class="col-md-12 col-lg-6">
@@ -234,15 +272,8 @@
                       Short Story About Balance Plus Clinic.
                     </h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eius mod tempor incididunt ut labore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation.
-                    </p>
-                    <p>
-                      Sed do eius mod tempor incididunt ut labore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis nostru
-                      <a href="#">Readmore</a>
+                      Established in 2018 in Bangalore, we are a 5 member team of expert physiotherapists who are specialized in providing holistic solutions for your health problems. Our mission here is to make physiotherapy, nutrition consultations and diet planning easily accessible to everyone, whether at home, office or our clinic.
+                      <a href="about.html"> Readmore </a>
                     </p>
                     <div class="row">
                       <div class="col-md-6 col-sm-4 about-numbers">
@@ -287,7 +318,7 @@
           <div class="col-md-12">
             <div class="heading-style1 service-mob">
               <span>Our Services</span>
-              <h2 class="short-story">High Quality Services for You</h2>
+              <h2 class="short-story">Supreme Quality Services Tailor Made for You</h2>
             </div>
           </div>
         </div>
@@ -297,12 +328,11 @@
               <div class="service-block yellow">
                 <img src="images/service-icon1.png" alt="#" />
 
-                <h3>Medical specialty Physiotherapy</h3>
+                <h3>Medical Specialty Physiotherapy</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eius mod tempor incididunt ut labore
+                  Bothered by the nagging pain on your shoulders? Do long walks makes you feel like your legs are on fire? Recently out of surgery and unable to move your body as before? 
                 </p>
-                <a href="#" class="btn btn-dark">READ MORE</a>
+                <a href="services.html" class="btn btn-dark">READ MORE</a>
                 <div class="service-bg-icon">
                   <img
                     src="images/services-bg1.png"
@@ -314,12 +344,11 @@
               <div class="service-block green">
                 <img src="images/service-icon2.png" alt="#" />
 
-                <h3>General Fitness and Training</h3>
+                <h3>General fitness and training</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eius mod tempor incididunt ut labore
+                  We provide personalized exercise regimens for the patients that include home based work outs like Pilates and also specific equipment workouts as per the patients’ needs and requirements.
                 </p>
-                <a href="#" class="btn btn-dark">READ MORE</a>
+                <a href="services.html" class="btn btn-dark">READ MORE</a>
                 <div class="service-bg-icon">
                   <img
                     src="images/services-bg2.png"
@@ -331,30 +360,29 @@
               <div class="service-block blue">
                 <img src="images/service-icon3.png" alt="#" />
 
-                <h3>Dietitian Nutritionist Health Care</h3>
+                <h3>Dietitian and Nutritionist</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eius mod tempor incididunt ut labore
+                  Planning to lose weight for that family function? Hitting the gym for months yet not gaining weight? Suffering from PCOS or Thyroid problems? Book an appointment now with our Balance plus. 
                 </p>
-                <a href="#" class="btn btn-dark">READ MORE</a>
+                <a href="services.html" class="btn btn-dark">READ MORE </a>
                 <div class="service-bg-icon">
                   <img
                     src="images/services-bg3.png"
                     class="img-fluid"
                     alt="#"
                   />
+                 
                 </div>
+               
               </div>
               <div class="service-block pink">
                 <img src="images/service-icon4.png" alt="#" />
 
-                <h3>Corporate Service</h3>
-                <br />
+                <h3>Corporate Wellness Services</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eius mod tempor incididunt ut labore
+                  A healthy mind and body is crucial for an individual to work at his maximum efficiency.  We at Balance plus have been providing our corporate clients with workplace consultations and treatments for their employees.
                 </p>
-                <a href="#" class="btn btn-dark">READ MORE</a>
+                <a href="services.html" class="btn btn-dark">READ MORE</a>
                 <div class="service-bg-icon">
                   <img
                     src="images/services-bg4.png"
@@ -370,7 +398,7 @@
           <div class="col-md-12">
             <p class="text-center service-help_link service-help-mobile">
               Contact us for better help and services.
-              <a href="#" class="get-started">Let’s get started</a>
+              <a href="appointment.html" class="get-started">Let’s get started</a>
             </p>
           </div>
         </div>
@@ -389,19 +417,20 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="why-choose_list why-choose_list-br">
-                  <i class="fas fa-check"></i>
+                  <!-- <i class="fas fa-check"></i> -->
                   <div class="why-choose_list-content">
                     <h5>Advanced Care</h5>
-                    <span>Lorem ipsum dolor sit</span>
+                    <span>Superior facilities beyond your expectations.</span>
                   </div>
                 </div>
               </div>
+
               <div class="col-md-6">
                 <div class="why-choose_list why-choose_list-br">
-                  <i class="fas fa-check"></i>
-                  <div class="why-choose_list-content">
+                  <!-- <i class="fas fa-check"></i> -->
+                  <div class="why-choose_list-content"> 
                     <h5>Virtual Consultation</h5>
-                    <span>Lorem ipsum dolor sit</span>
+                    <span>Access our services anywhere, anytime through our video consultations.</span>
                   </div>
                 </div>
               </div>
@@ -410,19 +439,19 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="why-choose_list why-choose_list-br">
-                  <i class="fas fa-check"></i>
+                  <!-- <i class="fas fa-check"></i> -->
                   <div class="why-choose_list-content">
                     <h5>Best Therapist</h5>
-                    <span>Lorem ipsum dolor sit</span>
+                    <span>Services you can always count on.</span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="why-choose_list why-choose_list-br">
-                  <i class="fas fa-check"></i>
+                  <!-- <i class="fas fa-check"></i> -->
                   <div class="why-choose_list-content">
                     <h5>Online Payment</h5>
-                    <span>Lorem ipsum dolor sit</span>
+                    <span>Easy payment methods including UPI gateways and card payments.</span>
                   </div>
                 </div>
               </div>
@@ -430,7 +459,7 @@
             <hr />
             <div class="row">
               <div class="col-md-12">
-                <a href="#" class="btn btn-dark btn-secondary" tabindex="0"
+                <a href="appointment.html" class="btn btn-dark btn-secondary" tabindex="0"
                   >Make Appointment</a
                 >
               </div>
@@ -439,13 +468,10 @@
           <div class="col-md-12 col-lg-6 offset-lg-1">
             <div class="why-choose_right emergency-mob">
               <h2>
-                Emergency?<br />
-                Contact Us.
+                Emergency?<br>  We are just a phone call away 
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
-                sed do eius mod tempor incididunt ut labore et dolore<br />
-                magna aliqua. Ut enim ad minim veniam
+                Life is full of surprises and no more so than when it comes to pain and injuries. Maybe you’ve been enjoying a sport you love and got a sprain or had an accident at work or at home.  Pick your phone, and contact us to know the severity of the injury and the treatment to be followed. 
               </p>
               <div class="why-choose_list">
                 <div class="choose-icon">
@@ -501,15 +527,9 @@
               <span>Who we are -----</span>
               <h2 class="short-story">We Have Advanced Technologies</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eius mod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
+                Our Team members have years of clinical experience and has kept themselves up to date with the latest research and developments in the field. Our clinic at Ejipura has ultra-modern rehabilitation facilities and is open from 8 am to 8pm.<br><br> We are trained to provide Ultrasound therapy, IFT therapy, traction therapy, TENS, IRR therapy ,Acupuncture and much more.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eius mod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
-              </p>
+             
               <hr />
               <div class="newsletter-subscribe sub-mob-margin">
                 <p>Subscribe to our Newsletter</p>
@@ -660,12 +680,10 @@
             <div class="consultant-content">
               <h2 class="consultant-text">Book a Virtual Consultation</h2>
 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eius mod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
+              <p style="color: #953e04;">
+                Video consultations are an excellent alternative to a face-to-face appointment. It’s easy to setup, and can be availed through your phone or computer.
               </p>
-              <a href="#" class="btn btn-success">Book Virtual Consultation</a>
+              <a href="appointment.html" class="btn btn-success">Book Virtual Consultation</a>
               <!-- <a href="../../watch.html?v=pBFQdxA-apI" class="popup-youtube"> <i class="fas fa-play"></i></a> -->
             </div>
           </div>
@@ -710,7 +728,7 @@
           <div class="testi-slider">
             <div class="testimonial-wrap">
               <img
-                src="images/doctors-img2.jpg"
+              src="img/avatar-default.png"
                 class="img-fluid testi-img-icon"
                 alt="#"
               />
@@ -722,11 +740,9 @@
                 <li><i class="fas fa-star"></i></li>
               </ul>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eius mod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
+                Physiotherapy with a human touch! My 76 year old mother recovered a lot during her 10 day session with Dr Pramod Maurya! Very caring and not business oriented. I wish them all the best!
               </p>
-              <span class="testi-name">Mary Jane (ceo)</span>
+              <span class="testi-name">Prabhat Sen</span><br><br><br><br>
               <div class="testi-styled-bg">
                 <img
                   src="images/testi-side-img_05.png"
@@ -737,7 +753,7 @@
             </div>
             <div class="testimonial-wrap quaternary-br-color">
               <img
-                src="images/doctors-img1.jpg"
+                src="img/avatar-default.png"
                 class="img-fluid testi-img-icon"
                 alt="#"
               />
@@ -749,11 +765,9 @@
                 <li><i class="fas fa-star"></i></li>
               </ul>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eius mod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
+                The doctor sets high standards for himself and encourages his patients to never compromise on the quality of their life due to an injury. Thank you Dr. Pramod Maurya for your expertise and care. You have the brain of a scientist, the heart of a humanist, and the hands of an artist! God bless you!
               </p>
-              <span class="testi-name">Mary Jane (ceo)</span>
+              <span class="testi-name">Ashwin Kumar</span><br><br>
               <div class="testi-styled-bg">
                 <img
                   src="images/testi-side-img_05.png"
@@ -764,7 +778,7 @@
             </div>
             <div class="testimonial-wrap">
               <img
-                src="images/doctors-img2.jpg"
+              src="img/avatar-default.png"
                 class="img-fluid testi-img-icon"
                 alt="#"
               />
@@ -776,11 +790,10 @@
                 <li><i class="fas fa-star"></i></li>
               </ul>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eius mod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.
+                I suffered partial ligament tear on my right knee…Mr Pramod Maurya did a great job in helping me out. I experienced a marvelous change with his treatments and prescribed exercises. I strongly recommend balance physiotherapy to everyone.
+                
               </p>
-              <span class="testi-name">Mary Jane (ceo)</span>
+              <span class="testi-name">Sujitha Bahuleyan</span> <br><br><br>
               <div class="testi-styled-bg">
                 <img
                   src="images/testi-side-img_05.png"
@@ -791,7 +804,7 @@
             </div>
             <div class="testimonial-wrap quaternary-br-color">
               <img
-                src="images/doctors-img1.jpg"
+              src="img/avatar-default.png"
                 class="img-fluid testi-img-icon"
                 alt="#"
               />
@@ -803,15 +816,39 @@
                 <li><i class="fas fa-star"></i></li>
               </ul>
               <p>
-                <span>L</span>orem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do eius mod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation.
+                I never imagined that I'll recover so fast. I was suffering from severe back pain because of vertebrae slip. I was able to walk just after a few days and today after 3 months I can do all my daily activities and can even run. He's a very patient, kind, gentle, friendly, and motivating physiotherapist. Thank you so much Dr. Pramod Maurya.
               </p>
-              <span class="testi-name">Mary Jane (ceo)</span>
+              <span class="testi-name">Kiran Rathore </span>
               <div class="testi-styled-bg">
                 <img
                   src="images/testi-side-img_05.png"
+                  class="img-fluid"
+                  alt="#"
+                />
+              </div>
+            </div>
+
+            <div class="testimonial-wrap quaternary-br-color">
+              <img
+              src="img/avatar-default.png"
+                class="img-fluid testi-img-icon"
+                alt="#"
+              />
+              <ul>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+              </ul>
+              <p>
+                I had an acute problem in my knee joints for which I had a perfect guide and permanent cure. I believe youngsters like him should be given ample scope to get better innovations in physiotherapy. I highly recommend Dr Pramod to everyone.
+                
+              </p>
+              <span class="testi-name">Vikas Mohapatra</span><br><br><br>
+              <div class="testi-styled-bg">
+                <img
+                src="images/testi-side-img_05.png"
                   class="img-fluid"
                   alt="#"
                 />
@@ -967,13 +1004,12 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-
+    
     <script src="js/footer.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
     <script src="js/menu.js"></script>
-
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/simple-form.js"></script>
   </body>
 </html>
