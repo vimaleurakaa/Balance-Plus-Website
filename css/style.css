@@ -41,7 +41,19 @@
   margin-bottom: 50px;
 }
 
+.mobile-banner {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
+  .desktop-banner {
+    display: none;
+  }
+
+  .mobile-banner {
+    display: block;
+  }
+
   .why-choose_block-mobile {
     margin-top: 64px !important;
     margin-right: -50px;
@@ -1048,6 +1060,8 @@ a:focus {
 .banner-slider .slick-dots li.slick-active button:before {
   color: #cc5200;
 }
+
+/* Desktop Banner */
 .banner1 {
   background: url(../img/slider-01.jpg) center no-repeat;
   background-size: cover;
@@ -1061,6 +1075,25 @@ a:focus {
   background-size: cover;
 }
 .banner2:focus {
+  outline: none;
+}
+
+/* Mobile Banner */
+.mob-banner1 {
+  background: url(../img/mobile-banner-1.jpg) center no-repeat;
+  background-size: cover;
+  height: 620px;
+}
+.mob-banner1:focus {
+  outline: none;
+}
+
+.mob-banner2 {
+  background: url(../img/mobile-banner-2.jpg) center no-repeat;
+  background-size: cover;
+  height: 620px;
+}
+.mob-banner2:focus {
   outline: none;
 }
 
