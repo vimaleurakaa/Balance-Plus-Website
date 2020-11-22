@@ -1091,7 +1091,7 @@ a:focus {
 .mob-banner2 {
   background: url(../img/mobile-banner-2.jpg) center no-repeat;
   background-size: cover;
-  height: 620px;
+   height: 620px;
 }
 .mob-banner2:focus {
   outline: none;
