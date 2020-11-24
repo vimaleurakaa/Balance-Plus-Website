@@ -124,7 +124,7 @@ $(function () {
   var $serviceSlider = $(".service-slider");
   if ($serviceSlider.length && $.fn.slick) {
     $serviceSlider.slick({
-      dots: false,
+      dots: true,
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -399,3 +399,13 @@ $("a.tab").click(function (evt) {
 });
 
 tabswitcher();
+
+$(".moreless-button").click(function (event) {
+  event.preventDefault();
+  $(".moretext").slideToggle();
+  if ($(".moreless-button").text() == "Read more") {
+    $(this).text("Read less");
+  } else {
+    $(this).text("Read more");
+  }
+});

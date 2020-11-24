@@ -63,7 +63,7 @@ width: 50%;">
 <h4>Our Services</h4>
 <ul>
 <li>
-<a href="services-detail.html#physio"><i class="fas fa-angle-double-right"></i>Physiotherapy</a>
+<a href="physiotherapy.html"><i class="fas fa-angle-double-right"></i>Physiotherapy</a>
 </li>
 <li>
 <a href="services-detail.html#nutrition"><i class="fas fa-angle-double-right"></i>Dietitian</a>

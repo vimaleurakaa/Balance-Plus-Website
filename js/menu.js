@@ -2,11 +2,11 @@ $(document).ready(function () {
   // Menu item
   document.getElementById("menu_item").innerHTML += `
     <!-- Navigation Menu -->
-    <div class="container nav-container">
+    <div class="container  nav-container">
         <div class="row">
             <div class="col-md-12">
 
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar  navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="index.html">
                         <img class="logo-size" src="img/logo.svg" alt="balanceplus"></a>
                     <button class="navbar-toggler nav-custome1" type="button" data-toggle="collapse"
@@ -30,7 +30,7 @@ $(document).ready(function () {
                                     <i class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item physio" href="services-detail.html#physio">Physiotherapy</a>
+                                    <a class="dropdown-item physio" href="physiotherapy.html">Physiotherapy</a>
                                     <a class="dropdown-item fitness" href="services-detail.html#fitness">Fitness & Training</a>
                                     <a class="dropdown-item nutri" href="services-detail.html#nutrition">Dietitian &
                                         Nutrition</a>
