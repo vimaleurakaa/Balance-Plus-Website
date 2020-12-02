@@ -1,7 +1,7 @@
 //Whats App
 $(document).ready(function () {
   document.getElementById("whatsapp").innerHTML += `<a
-    href="https://wa.me/917411692516?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure. Thnaks"
+    href="https://wa.me/917411692516?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure, Thanks."
     class="whatsapp-float"
     target="_blank"
   >
@@ -63,16 +63,16 @@ width: 50%;">
 <h4>Our Services</h4>
 <ul>
 <li>
-<a href="physiotherapy.html"><i class="fas fa-angle-double-right"></i>Physiotherapy</a>
+<a href="services-physiotherapy.html"><i class="fas fa-angle-double-right"></i>Physiotherapy</a>
 </li>
 <li>
-<a href="services-detail.html#nutrition"><i class="fas fa-angle-double-right"></i>Dietitian</a>
+<a href="services-nutrition.html"><i class="fas fa-angle-double-right"></i>Dietitian</a>
 </li>
 <li>
-<a href="services-detail.html#fitness"><i class="fas fa-angle-double-right"></i>Fitness</a>
+<a href="services-fitness.html"><i class="fas fa-angle-double-right"></i>Fitness</a>
 </li>
 <li>
-<a href="services-detail.html#corporate"><i class="fas fa-angle-double-right"></i>Corporate Service</a>
+<a href="services-corporate.html"><i class="fas fa-angle-double-right"></i>Corporate Service</a>
 </li>
 
 </ul>

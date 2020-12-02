@@ -24,17 +24,16 @@ $(document).ready(function () {
 
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button"
-                                    href="services.html" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Services
                                     <i class="fas fa-angle-down"></i>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item physio" href="physiotherapy.html">Physiotherapy</a>
-                                    <a class="dropdown-item fitness" href="services-detail.html#fitness">Fitness & Training</a>
-                                    <a class="dropdown-item nutri" href="services-detail.html#nutrition">Dietitian &
+                                <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item physio" href="services-physiotherapy.html">Physiotherapy</a>
+                                    <a class="dropdown-item fitness" href="services-fitness.html">Clinical Fitness</a>
+                                    <a class="dropdown-item nutri" href="services-nutrition.html">Diet &
                                         Nutrition</a>
-                                    <a class="dropdown-item corp" href="services-detail.html#corporate">Corporate Service</a>
+                                    <a class="dropdown-item corp" href="services-corporate.html">Corporate Service</a>
                                 </div>
                             </li>
                          
