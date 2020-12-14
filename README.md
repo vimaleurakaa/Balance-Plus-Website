@@ -1,4 +1,14 @@
 # Balance Plus Website
 
-A Physiotheraphy Clinic,
-Online Virtual Consultation Booking Website | Bootstrap-3
+A Physiotherapy Clinic Website,
+Online Virtual Consultation Booking Website | Built with Boostrap.
+
+Custom form data google forms api is used to POST the request.
+Google Reviews API is used to the review section from Google.
+SEO Optimisation, Semantic TAGS
+
+Header & Footer Created as a Reusable template.
+
+Razor Pay API integrated
+
+
