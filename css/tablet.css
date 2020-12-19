@@ -1,0 +1,75 @@
+@media only screen and (max-width: 1024px) {
+    
+    .about-image-block{
+      height: 540px !important;
+    }
+
+    .tab-size{
+        margin-top: 140px;
+    }
+
+    .tab-why-choose{
+        padding: 0 60px;
+    }
+
+    .tab-emergency-mob{
+        padding: 0 60px;
+    }
+
+    .virtual-bg {
+        /* background: url(../img/virtual-consultation.png) no-repeat #ff983c; */
+        background: #ff983c;
+        background-position-x: -300px;
+        background-position-y: 200px;
+        background-size: cover;
+        padding-left: 60px;
+        
+        /* height: 430px; */
+    }
+
+    .consultant-content{
+        padding:  0 0 0 0;
+    }
+
+    .consultant-text{
+        font-size:  50px;
+    }
+
+    .consultant-content a {
+        width: 210px;
+    }
+
+    .consultant-content p{
+        font-size: large;
+    }
+
+    .mob-only-visible{
+        display: none;
+    } 
+    
+    .tab-only-visible{
+        display: block !important;
+    }
+
+    .virtual-visible {
+        display: none !important;
+    }
+
+    .tablet-banner{
+        display: block !important;
+    }
+
+    .desktop-banner{
+        display: none;
+    }
+
+    .banner1 {
+        background-position: -400px !important;
+        height: 400px !important;
+    }
+    
+    .banner2 {
+        background-position: -500px 20px !important;
+    }
+
+}

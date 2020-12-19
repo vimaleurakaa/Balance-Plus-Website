@@ -1,3 +1,5 @@
+@import url("tablet.css");
+
 /* width */
 ::-webkit-scrollbar {
   width: 4px;
@@ -106,6 +108,11 @@
   
 }
 
+.geriatric-bg{
+  background-image: url(../img/services/Geriatric\ rehabilitation.png);
+}
+
+
 .fitness-bg{
   background-image: url(../img/services/fitness/main-banner.jpg);
 }
@@ -141,6 +148,17 @@
 }
 
 .background-service-fitness{
+  background: linear-gradient(
+      0deg,
+      rgb(231 85 0 / 80%) 0%,
+      rgb(231 85 0 / 80%) 100%
+    ),
+    url(../img/services/fitness/coach-2.jpg) no-repeat;
+  background-size: cover;
+  
+}
+
+.background-service-geriatic{
   background: linear-gradient(
       0deg,
       rgb(231 85 0 / 80%) 0%,
@@ -249,7 +267,23 @@ padding: 14px 18px 0px 18px;
   text-decoration: none;
 }
 
+.tab-only-visible{
+  display: none;
+}
+
+.tablet-banner{
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
+
+  .tablet-banner{
+    display: none !important;
+  }
+
+  .tab-only-visible{
+    display: none !important;
+}
 
   .video-play-text {
     padding-top: 40px !important;

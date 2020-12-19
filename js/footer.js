@@ -72,6 +72,9 @@ width: 50%;">
 <a href="services-fitness.html"><i class="fas fa-angle-double-right"></i>Fitness</a>
 </li>
 <li>
+<a href="services-geriatric-rehabilitation.html"><i class="fas fa-angle-double-right"></i>Geriatric</a>
+</li>
+<li>
 <a href="services-corporate.html"><i class="fas fa-angle-double-right"></i>Corporate Service</a>
 </li>
 

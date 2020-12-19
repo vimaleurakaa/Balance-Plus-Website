@@ -33,6 +33,7 @@ $(document).ready(function () {
                                     <a class="dropdown-item fitness" href="services-fitness.html">Clinical Fitness</a>
                                     <a class="dropdown-item nutri" href="services-nutrition.html">Diet &
                                         Nutrition</a>
+                                    <a class="dropdown-item corp" href="services-geriatric-rehabilitation.html">Geriatric rehabilitation</a>
                                     <a class="dropdown-item corp" href="services-corporate.html">Corporate Service</a>
                                 </div>
                             </li>
