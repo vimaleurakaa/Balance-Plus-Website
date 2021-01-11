@@ -11,5 +11,5 @@ Header & Footer Created as a Reusable template.
 
 Razor Pay API integrated
 
-Website URL : https://vimaleurakaa.github.io/balance-plus_website/
+Website URL : https://vimaleurakaa.github.io/Balance-Plus-Website/
 
