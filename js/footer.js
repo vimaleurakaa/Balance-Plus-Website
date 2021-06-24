@@ -1,7 +1,7 @@
 //Whats App
 $(document).ready(function () {
   document.getElementById("whatsapp").innerHTML += `<a
-    href="https://wa.me/917411692516?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure, Thanks."
+    href="https://wa.me/9019796808?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure, Thanks."
     class="whatsapp-float"
     target="_blank"
   >
@@ -21,11 +21,11 @@ $(document).ready(function () {
 <p>
 Confused about what Physiotherapy really is? Need a second opinion on your physician’s advice?  Book a consultation with us today and we will provide you with answers to your questions.
 </p>
-<a href="tel:917411692516">
-<h4><i class="fas fa-phone"></i>+91 7411692516</h4>
+<a href="tel:09019796808">
+<h4><i class="fas fa-phone"></i>+91 9019796808</h4>
 </a>
-<a href="mailto:info@balanceplus.in">
-<h4><i class="far fa-envelope"></i><span>info@balanceplus.in</span></h4>
+<a href="mailto:dr.pmmaurya@gmail.com">
+<h4><i class="far fa-envelope"></i><span style="font-size:14px">dr.pmmaurya@gmail.com</span></h4>
 </a>
 </div>
 </div>
@@ -49,7 +49,7 @@ padding-left: 40px;
 <a href="blog-post.html"><i class="fas fa-angle-double-right"></i>Blogs</a>
 </li>
 <li>
-<a href="https://wa.me/917411692516?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure. Thnaks"><i class="fas fa-angle-double-right"></i>WhatsApp</a>
+<a href="https://wa.me/919019796808?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure. Thanks"><i class="fas fa-angle-double-right"></i>WhatsApp</a>
 </li>
 <li>
 <a target="_blank" href="https://rzp.io/l/uY1rAktUE"><i class="fas fa-angle-double-right"></i>Payment</a>
