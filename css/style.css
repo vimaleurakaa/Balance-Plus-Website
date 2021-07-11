@@ -239,11 +239,12 @@ padding: 14px 18px 0px 18px;
 
 
 .about-image-block{
-  background-image: url(../img/about-us.jpeg);
-  height: 100%;
+  background-image: url(../img/about-us.jpg);
+  min-height: 382px;
   border-radius: 6px;
   background-size: cover;
   box-shadow: -2px 7px 17px 0px #00000025;
+  background-repeat: no-repeat;
 }
 
 .service-cards{
@@ -302,7 +303,9 @@ padding: 14px 18px 0px 18px;
   }
 
   .about-image-block{
-    height: 340px;
+    height: 382px;
+    background-size: contain;
+    background-position: center;
   }
 
   .various-serv{
@@ -1361,6 +1364,13 @@ a:focus {
   background-size: cover;
 }
 .banner2:focus {
+  outline: none;
+}
+.banner3 {
+  background: url(../img/slider-03-new.jpg) center no-repeat;
+  background-size: cover;
+}
+.banner3:focus {
   outline: none;
 }
 

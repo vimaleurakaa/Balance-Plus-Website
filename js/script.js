@@ -169,6 +169,7 @@ $(function () {
       slidesToScroll: 1,
       arrows: true,
       autoplay: true,
+      loop : true,
       responsive: [
         {
           breakpoint: 1200,
@@ -247,6 +248,7 @@ $(function () {
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
+      loop : true,
       responsive: [
         {
           breakpoint: 1200,
