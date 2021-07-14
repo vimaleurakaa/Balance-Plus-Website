@@ -86,16 +86,13 @@ width: 50%;">
 
 <ul>
 <li>
-<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.facebook.com/Balance-Plus-115452077033033/" target="_blank"><i class="fab fa-facebook-f"></i></a>
 </li>
 <li>
-<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="https://instagram.com/balanceplus.in?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
 </li>
 <li>
-<a href="#"><i class="fab fa-instagram"></i></a>
-</li>
-<li>
-<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.linkedin.com/in/balance-plus-7509771ba" target="_blank"><i class="fab fa-linkedin"></i></a>
 </li>
 </ul>
 </div>
