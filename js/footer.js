@@ -24,8 +24,8 @@ Confused about what Physiotherapy really is? Need a second opinion on your physi
 <a href="tel:09019796808">
 <h4><i class="fas fa-phone"></i>+91 9019796808</h4>
 </a>
-<a href="mailto:dr.pmmaurya@gmail.com">
-<h4><i class="far fa-envelope"></i><span style="font-size:14px">dr.pmmaurya@gmail.com</span></h4>
+<a href="mailto:balanceplusinfo@gmail.com">
+<h4><i class="far fa-envelope"></i><span style="font-size:14px">balanceplusinfo@gmail.com</span></h4>
 </a>
 </div>
 </div>
