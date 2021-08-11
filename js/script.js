@@ -165,16 +165,16 @@ $(function () {
     $doctorSlider.slick({
       dots: false,
       speed: 300,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       arrows: true,
       autoplay: true,
-      loop : true,
+      loop: true,
       responsive: [
         {
           breakpoint: 1200,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             arrows: false,
@@ -244,11 +244,11 @@ $(function () {
     $ourteamSlider.slick({
       dots: true,
       speed: 300,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
-      loop : true,
+      loop: true,
       responsive: [
         {
           breakpoint: 1200,

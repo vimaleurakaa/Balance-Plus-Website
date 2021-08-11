@@ -8,17 +8,17 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff8533; 
+  background: #ff8533;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 .moretext {
@@ -33,17 +33,16 @@
   z-index: 9999;
 }
 
-#menu_item{
+#menu_item {
   -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 2px 3px -3px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 2px 3px -3px #999;
 }
 
-.form-control:focus{
+.form-control:focus {
   border: none;
-  box-shadow : none;
+  box-shadow: none;
 }
-
 
 .desktop-space {
   margin-bottom: -140px;
@@ -84,59 +83,56 @@
   display: none;
 }
 
-.testimonial-desktop{
+.testimonial-desktop {
   display: block;
 }
 
-.testimonial-mobile{
+.testimonial-mobile {
   display: none;
 }
 
-.tech-slider-desk{
+.tech-slider-desk {
   display: block;
 }
 
-.tech-slider-mobile{
+.tech-slider-mobile {
   display: none;
 }
 
-.service-container{
+.service-container {
   padding-right: 0 !important;
   background-image: url(../img/service_physiotherapy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
-.geriatric-bg{
+.geriatric-bg {
   background-image: url(../img/services/Geriatric\ rehabilitation.png);
 }
 
-
-.fitness-bg{
+.fitness-bg {
   background-image: url(../img/services/fitness/main-banner.jpg);
 }
 
-.diet-bg{
+.diet-bg {
   background-image: url(../img/services/diet/main.jpg);
 }
 
-.corp-bg{
+.corp-bg {
   background-image: url(../img/services/corporate-wellness-programs.jpg);
 }
-  
 
-.service-container img{
+.service-container img {
   opacity: 0;
   width: 100%;
 }
 
-.service-title-desc{
+.service-title-desc {
   color: #fff;
   margin: 20px;
 }
 
-.background-service-physio{
+.background-service-physio {
   background: linear-gradient(
       0deg,
       rgb(231 85 0 / 80%) 0%,
@@ -144,10 +140,9 @@
     ),
     url(../img/why-choose-bg.jpg) no-repeat;
   background-size: cover;
-  
 }
 
-.background-service-fitness{
+.background-service-fitness {
   background: linear-gradient(
       0deg,
       rgb(231 85 0 / 80%) 0%,
@@ -155,10 +150,9 @@
     ),
     url(../img/services/fitness/coach-2.jpg) no-repeat;
   background-size: cover;
-  
 }
 
-.background-service-geriatic{
+.background-service-geriatic {
   background: linear-gradient(
       0deg,
       rgb(231 85 0 / 80%) 0%,
@@ -166,10 +160,9 @@
     ),
     url(../img/services/fitness/coach-2.jpg) no-repeat;
   background-size: cover;
-  
 }
 
-.background-service-diet{
+.background-service-diet {
   background: linear-gradient(
       0deg,
       rgb(231 85 0 / 80%) 0%,
@@ -177,10 +170,9 @@
     ),
     url(../img/services/diet/banner-2.png) no-repeat;
   background-size: cover;
-  
 }
 
-.background-service-corp{
+.background-service-corp {
   background: linear-gradient(
       0deg,
       rgb(231 85 0 / 80%) 0%,
@@ -188,57 +180,55 @@
     ),
     url(../img/services/corporate/main.jpg) no-repeat;
   background-size: cover;
-  
 }
 
-.service-thumb{
+.service-thumb {
   border-radius: 12px;
-    box-shadow: -2px 7px 17px 0px #00000025;
+  box-shadow: -2px 7px 17px 0px #00000025;
 }
 
-.serive-desc{
+.serive-desc {
   margin-top: 22px;
 }
 
-.card{
+.card {
   margin-bottom: 30px;
   cursor: pointer;
 }
 
-.service-card{
-    border: 0;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: all .1s ease-in;
-    top: 0;
+.service-card {
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease-in;
+  top: 0;
 }
 
-.card-body{
-padding: 14px 18px 0px 18px;
+.card-body {
+  padding: 14px 18px 0px 18px;
 }
 
-.card-title{
+.card-title {
   font-size: 16px;
   font-weight: 500;
 }
 
-.card-title-service{
+.card-title-service {
   font-size: 18px;
   font-weight: 500;
-  padding-bottom: 10px
+  padding-bottom: 10px;
 }
 
-.card-img-top{
+.card-img-top {
   height: 210px;
   object-fit: cover;
 }
 
-.card-services-main{
+.card-services-main {
   height: 400px !important;
 }
 
-
-.about-image-block{
+.about-image-block {
   background-image: url(../img/about-us.jpg);
   min-height: 382px;
   border-radius: 6px;
@@ -247,88 +237,87 @@ padding: 14px 18px 0px 18px;
   background-repeat: no-repeat;
 }
 
-.service-cards{
+.service-cards {
   margin-top: 80px;
 }
 
-.about-home{
+.about-home {
   margin-top: -60px;
 }
 
-.treatment-icon{
+.treatment-icon {
   width: 90px;
   margin-bottom: 30px;
 }
 
-.our-team-about{
+.our-team-about {
   padding: 20px 0 130px !important;
 }
 
-.service-card a{
+.service-card a {
   text-decoration: none;
 }
 
-.tab-only-visible{
+.tab-only-visible {
   display: none;
 }
 
-.tablet-banner{
+.tablet-banner {
   display: none;
 }
 
 @media only screen and (max-width: 600px) {
-
-  .tablet-banner{
+  .tablet-banner {
     display: none !important;
   }
 
-  .tab-only-visible{
+  .tab-only-visible {
     display: none !important;
-}
+  }
 
   .video-play-text {
     padding-top: 40px !important;
   }
 
-  .mobile-treat{
+  .mobile-treat {
     padding: 20px;
   }
 
-  .service-cards{
+  .service-cards {
     margin-top: 0px;
   }
 
-  .about-home{
+  .about-home {
     margin-top: -100px !important;
   }
 
-  .about-image-block{
+  .about-image-block {
     height: 382px;
     background-size: contain;
     background-position: center;
   }
 
-  .various-serv{
+  .various-serv {
     margin-top: -30px;
   }
 
-  .service-title-desc{
+  .service-title-desc {
     margin: 20px 20px 20px 30px;
   }
 
-  .testimonial-mobile{
+  .testimonial-mobile {
     display: block;
   }
 
-  .tech-slider-mobile{
+  .tech-slider-mobile {
     display: block;
   }
 
-  .tech-slider-desk{
+  .tech-slider-desk {
     display: none;
   }
 
-  .testimonial-desktop{
+  .testimonial-desktop {
     display: none;
   }
 
@@ -1010,8 +999,6 @@ textarea {
   background: 0 0 !important;
 }
 
-
-
 .dropdown-left {
   left: -122px;
 }
@@ -1387,9 +1374,18 @@ a:focus {
 .mob-banner2 {
   background: url(../img/mobile-banner-2.jpg) center no-repeat;
   background-size: cover;
-   height: 620px;
+  height: 620px;
 }
 .mob-banner2:focus {
+  outline: none;
+}
+
+.mob-banner3 {
+  background: url(../img/mobile-banner-3.jpg) center no-repeat;
+  background-size: cover;
+  height: 620px;
+}
+.mob-banner3:focus {
   outline: none;
 }
 
@@ -2435,7 +2431,6 @@ a:focus {
   padding: 80px 0 130px;
 }
 
-
 .sub-title_center {
   text-align: center;
   margin: 0 0 40px;
@@ -2595,7 +2590,7 @@ a:focus {
   text-align: center;
   /* top: -60px; */
   bottom: -40px;
-  
+
   pointer-events: all;
 }
 .testi-slider .slick-dots li {
@@ -3332,7 +3327,6 @@ footer {
   height: 50%;
 }
 
-
 .background-bg5 {
   padding: 60px !important;
   background: #fff;
@@ -3342,8 +3336,7 @@ footer {
 .background-bg5::before {
   position: absolute;
   content: "";
-  background: 
-    url(../img/service_physiotherapy.jpg) no-repeat;
+  background: url(../img/service_physiotherapy.jpg) no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
