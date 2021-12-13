@@ -160,7 +160,7 @@ width: 50%;">
   if (!eFlag) {
     setTimeout(function () {
       $("#enquireNow").modal("show");
-    }, 5000);
+    }, 6000);
   }
 
   //form redirect
