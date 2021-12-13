@@ -125,39 +125,11 @@
       }
     </script>
     <!-- SEO Integration -->
-
-    <!-- Global site tag (gtag.js) - Google Ads: 10803632045 -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-10803632045"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-10803632045");
-    </script>
-    <script defer>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") {
-            window.location = url;
-          }
-        };
-        gtag("event", "conversion", {
-          send_to: "AW-10803632045/PIOvCKOXtYcDEK2vyZ8o",
-          event_callback: callback,
-        });
-        return false;
-      }
-    </script>
   </head>
 
   <body>
     <div id="covers"></div>
+
     <div id="menu_item" class="fixed-top" style="background-color: #fff"></div>
 
     <!-- Desktop Banner -->
@@ -318,7 +290,7 @@
                     style="margin: 20px"
                   >
                     <span class="we-are">We are here for you</span>
-                    <h1>Therapy with trust and <br />care.</h1>
+                    <h1>Therapy with trust and care.<br /></h1>
                   </div>
                 </div>
               </div>
@@ -334,7 +306,7 @@
                     style="margin: 20px; margin-bottom: 80px"
                   >
                     <span class="we-are">We are here for you</span>
-                    <h1>Lead pain-free life <br />with us.</h1>
+                    <h1>Lead pain-free life with us.</h1>
                   </div>
                 </div>
               </div>
@@ -361,7 +333,93 @@
     </header>
 
     <section>
-      <div id="enquiryNowModalWindow" class="enquire-now-modal container"></div>
+      <div class="enquire-now-modal modal--container">
+        <button
+          type="button"
+          class="btn btn-success btn-lg"
+          data-toggle="modal"
+          data-target="#enquireNow"
+        >
+          subscribe now
+        </button>
+        <div
+          class="modal fade"
+          id="enquireNow"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="enquireNowLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-0 row">
+                <div class="col-12 col-lg-5 ad p-0">
+                  <img
+                    src="https://i.imgur.com/UCqKKB4.jpg"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="details col-12 col-lg-7">
+                  <h2>STAY TUNED</h2>
+                  <p>
+                    <small class="para"
+                      >Subscribe to our newsletter and never miss our<br />
+                      designs ,latest news.etc.</small
+                    >
+                  </p>
+                  <p>
+                    <small class="para"
+                      >Our newsletter is sent once a week, every<br />Monday</small
+                    >
+                  </p>
+                  <div class="form-group mt-3 pt-3 mb-5">
+                    <form
+                      id="form"
+                      method="POST"
+                      action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSftJoP-lqx1iRGnTsGIBvWJYem7Ohnq6kggw3cBPAq96kLQjA/formResponse"
+                      target="form-target"
+                      onsubmit="return validate_form();"
+                    >
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="entry.314831830"
+                          class="form-control"
+                          placeholder="Enter Your Email"
+                          required=""
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter Your Number"
+                          name="entry.1178267781"
+                          required=""
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <small class="text-muted"
+                    ><a href="#">Personal Data Charter</a></small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="about-section">
@@ -453,7 +511,7 @@
           <div class="col text-center mobile-treat">
             <img
               class="treatment-icon"
-              src="img/why-choose/experienced-01.svg"
+              src="./img/why-choose/experienced-01.svg"
               alt=""
             />
             <p>Experienced <br />Professionals</p>
@@ -462,7 +520,7 @@
           <div class="col text-center mobile-treat">
             <img
               class="treatment-icon"
-              src="img/why-choose/hands-treat-01.svg"
+              src="./img/why-choose/hands-treat-01.svg"
               alt=""
             />
             <p>Hands on <br />Treatment</p>
@@ -471,7 +529,7 @@
           <div class="col text-center mobile-treat">
             <img
               class="treatment-icon"
-              src="img/why-choose/location-01.svg"
+              src="./img/why-choose/location-01.svg"
               alt=""
             />
             <p>
@@ -483,7 +541,7 @@
           <div class="col text-center mobile-treat">
             <img
               class="treatment-icon"
-              src="img/why-choose/appointment.svg"
+              src="./img/why-choose/appointment.svg"
               alt=""
             />
             <p>Book Immediate Appointments</p>
@@ -492,7 +550,7 @@
           <div class="col text-center mobile-treat">
             <img
               class="treatment-icon"
-              src="img/why-choose/virtual-01.svg"
+              src="./img/why-choose/virtual-01.svg"
               alt=""
             />
             <p>
@@ -911,8 +969,8 @@
                 <div class="why-choose_list-content">
                   <span>Call us now</span>
                   <h3>
-                    <a style="color: #fff" href="tel:+91 9019796808"
-                      >+91 9019796808</a
+                    <a style="color: #fff" href="tel:+91 7411692516"
+                      >+91 7411692516</a
                     >
                   </h3>
                 </div>
@@ -927,7 +985,7 @@
                     <a
                       style="color: #fff"
                       href="mailto:balanceplusinfo@gmail.com"
-                      >balanceplusinfo@gmail.com</a
+                      >dr.balanceplusinfo@gmail.com</a
                     >
                   </h3>
                 </div>
@@ -1040,7 +1098,7 @@
           <div class="col-lg-5 offset-lg-7">
             <img
               class="virtual-img-mob"
-              src="img/virtual-consultation.png"
+              src="./img/virtual-consultation.png"
               alt=""
             />
           </div>
@@ -1074,7 +1132,7 @@
           >
             <img
               class="virtual-img-mob"
-              src="img/virtual-consultation.png"
+              src="./img/virtual-consultation.png"
               alt=""
             />
           </div>
@@ -1301,15 +1359,13 @@
                 The doctor sets high standards for himself and encourages his
                 patients to never compromise on the quality of their life Thank
                 you Dr. Pramod Maurya
+                <span class="moretext d-block"
+                  >Thank you Dr. Pramod Maurya for your expertise and care. You
+                  have the brain of a scientist, the heart of a humanist, and
+                  the hands of an artist! God bless you!</span
+                >
+                <a class="moreless-button" href="#">Read more</a>
               </p>
-
-              <p class="moretext">
-                Thank you Dr. Pramod Maurya for your expertise and care. You
-                have the brain of a scientist, the heart of a humanist, and the
-                hands of an artist! God bless you!
-              </p>
-              <a class="moreless-button" href="#">Read more</a>
-
               <span class="testi-name">Ashwin Kumar</span>
               <div class="testi-styled-bg">
                 <img
@@ -1336,14 +1392,12 @@
                 I suffered partial ligament tear on my right knee…Mr Pramod
                 Maurya did a great job in helping me out. I experienced a
                 marvelous change with his treatments
+                <span class="moretext d-block">
+                  and prescribed exercises. I strongly recommend balance
+                  physiotherapy to everyone.</span
+                >
+                <a class="moreless-button" href="#">Read more</a>
               </p>
-
-              <p class="moretext">
-                and prescribed exercises. I strongly recommend balance
-                physiotherapy to everyone.
-              </p>
-              <a class="moreless-button" href="#">Read more</a>
-
               <span class="testi-name">Sujitha Bahuleyan</span>
               <div class="testi-styled-bg">
                 <img
@@ -1370,15 +1424,14 @@
                 I never imagined that I'll recover so fast. I was suffering from
                 severe back pain because of vertebrae slip. I was able to walk
                 just after a few days and today
+                <span class="moretext d-block">
+                  after 3 months I can do all my daily activities and can even
+                  run. He's a very patient, kind, gentle, friendly, and
+                  motivating physiotherapist. Thank you so much Dr. Pramod
+                  Maurya.</span
+                >
+                <a class="moreless-button" href="#">Read more</a>
               </p>
-
-              <p class="moretext">
-                after 3 months I can do all my daily activities and can even
-                run. He's a very patient, kind, gentle, friendly, and motivating
-                physiotherapist. Thank you so much Dr. Pramod Maurya.
-              </p>
-              <a class="moreless-button" href="#">Read more</a>
-
               <span class="testi-name">Kiran Rathore </span>
               <div class="testi-styled-bg">
                 <img
@@ -1406,14 +1459,12 @@
                 I had an acute problem in my knee joints for which I had a
                 perfect guide and permanent cure. I believe youngsters like him
                 should be given ample scope to
+                <span class="moretext d-block">
+                  get better innovations in physiotherapy. I highly recommend Dr
+                  Pramod to everyone.</span
+                >
+                <a class="moreless-button" href="#">Read more</a>
               </p>
-
-              <p class="moretext">
-                get better innovations in physiotherapy. I highly recommend Dr
-                Pramod to everyone.
-              </p>
-              <a class="moreless-button" href="#">Read more</a>
-
               <span class="testi-name">Vikas Mohapatra</span>
               <div class="testi-styled-bg">
                 <img
@@ -1464,21 +1515,21 @@
               </div>
 
               <div class="blog-grid-wrap">
-                <div class="blog-grid-img">
-                  <a href="blog-post-2.html">
+                <a href="blog-post-2.html">
+                  <div class="blog-grid-img">
                     <img src="img/blog/diet-1.jpg" class="img-fluid" alt="#" />
-                  </a>
-                </div>
-                <div class="blog-grid_content">
-                  <div class="blog-grid-top_icon">
-                    <label>Physiotherapy</label>
                   </div>
-                  <div class="blog-grid_text">
-                    <a href="blog-post-2.html">
-                      <h4>Importance of a healthy diet during pregnancy</h4>
-                    </a>
+                  <div class="blog-grid_content">
+                    <div class="blog-grid-top_icon">
+                      <label>Physiotherapy</label>
+                    </div>
+                    <div class="blog-grid_text">
+                      <a href="blog-post-2.html">
+                        <h4>Importance of a healthy diet during pregnancy</h4>
+                      </a>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div class="blog-grid-wrap">

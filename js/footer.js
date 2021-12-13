@@ -9,6 +9,52 @@ $(document).ready(function () {
   </a>`;
 });
 
+//enquiry form
+document.getElementById("enquiryNowModalWindow").innerHTML = `
+    <div class="modal fade" id="enquireNow" tabindex="-1" role="dialog" aria-labelledby="enquireNowLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body p-0 row">
+              <div class="col-12 col-lg-5 ad p-0">
+                <img src="/img/blog/back-1.jpg" width="100%" height="100%" style="object-fit: cover" />
+              </div>
+              <div class="details col-12 col-lg-7 p-5">
+                <div>
+                  <h2>Enquire Now!</h2>
+                  <p>Let us help you get back to better again!</p>
+                </div>
+
+                <form class="form-group mt-3 pt-3 mb-5" id="form" method="POST"
+                  action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSftJoP-lqx1iRGnTsGIBvWJYem7Ohnq6kggw3cBPAq96kLQjA/formResponse"
+                  target="form-target" onsubmit="return enquiry_form();">
+                  <div class="form-group">
+                    <label for="yourName">Your Name</label>
+                    <input type="text" name="entry.314831830" class="form-control" id="yourName" placeholder="Name"
+                      required />
+                  </div>
+                  <div class="form-group">
+                    <label for="emailOrPhone">Contact Information</label>
+                    <input type="text" name="entry.1178267781" class="form-control" id="emailOrPhone"
+                      placeholder="Email or Phone" required />
+                  </div>
+
+                  <button type="submit" class="btn btn-success btn-lg w-100 d-block mt-4">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+`;
+
 //Footer
 $(document).ready(function () {
   document.getElementById("footer").innerHTML += `
@@ -108,6 +154,28 @@ width: 50%;">
 </div>
 </div>
 </footer>`;
+
+  const eFlag = localStorage.getItem("enquiry-flag");
+
+  if (!eFlag) {
+    setTimeout(function () {
+      $("#enquireNow").modal("show");
+    }, 5000);
+  }
+
+  //form redirect
+  function enquiry_form() {
+    const form = document.getElementById("form");
+    const origin_URL = window.location.origin;
+
+    form.addEventListener("submit", function (e) {
+      window.location.assign(origin_URL + "/thank-you.html");
+      localStorage.setItem("enquiry-flag", true);
+    });
+
+    return;
+  }
+  enquiry_form();
 });
 
 // $(document).ready(function () {

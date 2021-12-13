@@ -77,12 +77,45 @@
   </script>
   <!-- SEO Integration -->
 
+      <!-- Global site tag (gtag.js) - Google Ads: 10803632045 -->
+      <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-10803632045"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-10803632045");
+    </script>
+    <script defer>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-10803632045/PIOvCKOXtYcDEK2vyZ8o",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
 </head>
 
 <body>
   <div id="covers"></div>
 
   <div id="menu_item"></div>
+
+  <section>
+    <div id="enquiryNowModalWindow" class="enquire-now-modal container"></div>
+  </section>
 
   <section class="space sub-header">
     <div class="container container-custom">

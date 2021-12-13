@@ -1,4 +1,5 @@
 @import url("tablet.css");
+@import url('modal.css');
 
 /* width */
 ::-webkit-scrollbar {
