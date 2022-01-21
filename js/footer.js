@@ -1,7 +1,7 @@
 //Whats App
 $(document).ready(function () {
   document.getElementById("whatsapp").innerHTML += `<a
-    href="https://wa.me/9019796808?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure, Thanks."
+    href="https://wa.me/917411692516?text=Hello, I’m interested in a service at your clinic and I’d like more information about it. please send me your brochure, Thanks."
     class="whatsapp-float"
     target="_blank"
   >
@@ -147,13 +147,16 @@ width: 50%;">
 <div class="row">
 <div class="col-md-12">
 <div class="copyright">
- <p>© BalancePlus 2020 Allright Reserved</p>
+ <p>© BalancePlus <span id="copyrightYear"></span> Allright Reserved</p>
 <a href="#" id="scroll"><i class="fas fa-angle-double-up"></i></a>
 </div>
 </div>
 </div>
 </div>
 </footer>`;
+
+  const copyrightYear = document.getElementById("copyrightYear");
+  copyrightYear.innerHTML = new Date().getFullYear();
 
   const eFlag = localStorage.getItem("enquiry-flag");
 
