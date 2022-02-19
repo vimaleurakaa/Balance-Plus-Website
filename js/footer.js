@@ -67,8 +67,8 @@ $(document).ready(function () {
 <p>
 Confused about what Physiotherapy really is? Need a second opinion on your physician’s advice?  Book a consultation with us today and we will provide you with answers to your questions.
 </p>
-<a href="tel:09019796808">
-<h4><i class="fas fa-phone"></i>+91 9019796808</h4>
+<a href="tel:+917411692516">
+<h4><i class="fas fa-phone"></i>+91 74116 92516</h4>
 </a>
 <a href="mailto:balanceplusinfo@gmail.com">
 <h4><i class="far fa-envelope"></i><span style="font-size:14px">balanceplusinfo@gmail.com</span></h4>
